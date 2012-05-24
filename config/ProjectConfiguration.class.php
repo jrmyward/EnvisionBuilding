@@ -1,6 +1,8 @@
 <?php
 
-require_once '/Users/jrmy/Sites/clients/envision_building_company/ebc_dm/lib/vendor/diem/dmCorePlugin/lib/core/dm.php';
+#require_once '/Users/jrmy/Sites/clients/envision_building_company/ebc_dm/lib/vendor/diem/dmCorePlugin/lib/core/dm.php';
+require_once dirname(__FILE__).'/../lib/vendor/diem/dmCorePlugin/lib/core/dm.php';
+
 dm::start();
 
 class ProjectConfiguration extends dmProjectConfiguration
