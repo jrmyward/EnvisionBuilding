@@ -1,0 +1,12 @@
+.DS_Store
+log/*
+cache/*
+web/cache/*
+data/dm/log/*
+Thumbs.db
+nbproject
+dmCorePlugin/test/project/cache/*
+dmCorePlugin/test/project/log/*
+*.orig
+*.swp
+.svn*
