@@ -1,30 +1,141 @@
-.elements .element {
-  list-style: disc inside;
-  padding: 1em;
+/* CSS Document */
+
+/*
+*  1.0 UNIVERSAL RESETS
+*  ------------------------------------------
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20091131 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
 }
 
-.pager {
-  text-align: center;
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
 }
 
-.navigation_bread_crumb li, .pager li {
-  display: inline;
-  margin: 0 5px;
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
 }
 
-h1 {
-  font-size: 2.5em;
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-h2 {
-  font-size: 2em;
+/*
+ *  2.0 GENERIC CLASSES
+ *  ------------------------------------------
+ */
+
+body {
+  font-family:Arial, Tahoma,Verdana,FreeSans,sans-serif; 
+  color:#333; font-size: 13px; line-height:1.7;
+  background:#000000 url(/theme/images/bg_header_sketch.jpg) center top no-repeat;
 }
 
-h3 {
-  font-size: 1.6em;
+dl,
+hr,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+  margin-bottom: 20px;
 }
 
-h4 {
-  font-size: 1.2em;
-  font-weight: bold;
+/*
+ *  3.0 GENERAL STRUCTURE
+ *  ------------------------------------------
+ */
+.dm_widgets:after {clear:both; content:"."; display:block; height:0; visibility:hidden;}
+.dm_widgets {display:inline-block;}
+.dm_widgets {display:block;}
+
+.layout {position:relative; }
+.layout .header {position:relative; min-height:360px; padding-bottom:26px; background:url('/theme/images/bg_gradient_header.jpg') left bottom repeat-x;}
+.dm_layout_top {position: relative; width:960px; min-height:113px; margin:0 auto;}
+.layout_center {/*background-color: #fff;*/ min-height:100px;}
+.container_content_top {margin-bottom: 10px;}
+.dm_page_media,
+.dm_page_content_top,
+.content_main,
+.dm_page_content_bottom {width:960px; margin:0 auto;}
+#dm_content {float:left; width:620px; margin:0 10px;}
+.dm_layout_right {float:right; width:300px; margin:0 10px;}
+
+
+/*
+ *  4.0 HEADER / FOOTER
+ *  ------------------------------------------
+ */
+
+.brand {float:left; width:620px; margin:20px 0;}
+.brand .logo {float:left; width:124px; margin-right:20px;}
+.brand .markdown {
+  display:inline-block;
+  font-family:Papyrus, "Times New Roman", Times, serif; 
+  font-style:italic; color:#CC610A; font-weight:normal; 
 }
+.brand h2 {display:inline-block; float:left; width:456px; margin:20px 0 0 0; font-size:2.5em; line-height:1em;}
+.brand h2 span {padding-left:20px; font-size:0.65em; line-height:1em;}
+.brand h3 {display:inline-block; float:left; width:456px; margin:110px 0 0 0; font-size:1.25em; line-height:1.5em; text-align: right;}
+.brand h3 span {color:#fff;}
+
+.navigation_menu {margin-top:47px;}
+.menu {margin-bottom:0px; list-style-type:none; }
+.menu li {float:left; width:128px; height:47px;}
+.menu li a {
+  display:block; width:118px; height:33px; padding:15px 5px 0 5px;
+  background:url('/theme/images/bg_nav.jpg') 0 0 no-repeat;
+  color:#252960; font-size:1.167em; line-height:1em; text-decoration:none; text-align: center;
+}
+.menu li a:hover {background-position:0px -47px;}
+.menu li span.dm_current {
+  display:block; width:118px; height:33px; padding:15px 5px 0 5px;
+  background:url('/theme/images/bg_nav.jpg') 0 -47px no-repeat;
+  color:#252960; font-size:1.167em; line-height:1em; text-decoration:none; text-align: center;
+}
+
+
+.footer {background:url(/theme/images/footer-tail.jpg) left top repeat-x; color:#B1CCE7; font-size:1.083em;}
+.footer a {color:#0654A0; text-decoration:none; margin-left:15px;}
+.footer a:hover {text-decoration:underline;}
+
+.footer .dm_layout_ft_content {width:980px; margin:0 auto; padding:73px 0 75px 73px;}

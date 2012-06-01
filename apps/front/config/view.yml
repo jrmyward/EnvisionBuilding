@@ -4,9 +4,7 @@ default:
     content-type: text/html
 
   stylesheets:
-    - layout
     - main
-    - markdown
 
   javascripts:
     - front

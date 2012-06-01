@@ -1,0 +1,5 @@
+dmWidgetNavigation:
+
+  menu:
+    form_class:     ocdWidgetMenuForm
+    view_class:     ocdWidgetMenuView
