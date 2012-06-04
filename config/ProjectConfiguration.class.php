@@ -14,6 +14,7 @@ class ProjectConfiguration extends dmProjectConfiguration
     
     $this->enablePlugins(array(
       // add plugins you want to enable here
+    	'dmSqlBackupPlugin'
     ));
 
     $this->setWebDir(sfConfig::get('sf_root_dir').'/web');
