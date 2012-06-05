@@ -20,13 +20,6 @@
     </div><!-- .header -->
 
     <div class="layout_center clearfix">
-      <div class="container container_media clearfix">
-        <?php echo $helper->renderArea('page.media', '.clearfix') ?>
-      </div><!-- .container .container_media -->
-
-      <div class="container container_content_top clearfix">
-        <?php echo $helper->renderArea('page.content_top', '.clearfix') ?>
-      </div><!-- .container .container_content_top -->
 
       <div class="content_main clearfix">
 

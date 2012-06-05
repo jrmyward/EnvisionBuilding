@@ -100,6 +100,17 @@ fieldset {
 #dm_content {float:left; width:620px; margin:0 10px;}
 .dm_layout_right {float:right; width:300px; margin:0 10px;}
 
+.colspan-3 {width:875px;}
+
+.box_rc_bottom {background:url('/theme/images/box-left.png') left bottom no-repeat;}
+.box_rc_bottom .dm_text {
+  background:url('/theme/images/box-right.png') right bottom no-repeat; 
+  padding:0 144px;
+}
+.box_rc_bottom .dm_text .text_content {
+  background:url('/theme/images/box-tail.png') left bottom repeat-x; 
+  min-height:238px; height:auto !important; height:238px;
+}
 
 /*
  *  4.0 HEADER / FOOTER
