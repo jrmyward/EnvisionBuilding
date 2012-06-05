@@ -102,6 +102,22 @@ fieldset {
 
 .colspan-3 {width:875px;}
 
+.margin1 {margin-right:3px;}
+.margin2 {margin-left:21px;}
+.margin3 {margin-right:51px;}
+.margin4 {margin-left:15px;}
+.margin5 {margin-right:74px;}
+.margin6 {margin-right:21px;}
+
+.padding1 {padding-bottom:18px;}
+.padding2 {padding-bottom:22px;}
+.padding3 {padding-bottom:20px;}
+.padding4 {padding-bottom:25px;}
+.padding5 {padding-left:22px;}
+.padding6 {padding-bottom:16px;}
+.padding7 {padding-top:4px;}
+.padding8 {padding-bottom:12px;}
+
 .box_rc_bottom {background:url('/theme/images/box-left.png') left bottom no-repeat;}
 .box_rc_bottom .dm_text {
   background:url('/theme/images/box-right.png') right bottom no-repeat; 
@@ -126,21 +142,30 @@ fieldset {
 }
 .brand h2 {display:inline-block; float:left; width:456px; margin:20px 0 0 0; font-size:2.5em; line-height:1em;}
 .brand h2 span {padding-left:20px; font-size:0.65em; line-height:1em;}
-.brand h3 {display:inline-block; float:left; width:456px; margin:110px 0 0 0; font-size:1.25em; line-height:1.5em; text-align: right;}
+.brand h3 {display:inline-block; float:left; width:456px; margin:110px 0 0 0; font-size:1.25em; line-height:1.5em; text-align: right; color:#CC610A;}
 .brand h3 span {color:#fff;}
 
 .navigation_menu {margin-top:47px;}
 .menu {margin-bottom:0px; list-style-type:none; }
-.menu li {float:left; width:128px; height:47px;}
-.menu li a {
-  display:block; width:118px; height:33px; padding:15px 5px 0 5px;
-  background:url('/theme/images/bg_nav.jpg') 0 0 no-repeat;
-  color:#252960; font-size:1.167em; line-height:1em; text-decoration:none; text-align: center;
+.menu li {float:left; width:128px; height:47px; background:none; padding-left:0px;}
+.menu li.first a,
+.menu li.first span.dm_current {
+  -moz-border-radius-topleftt: 10px; -webkit-border-top-left-radius: 10px; border-top-left-radius: 10px;
 }
-.menu li a:hover {background-position:0px -47px;}
+.menu li.last a,
+.menu li.last span.dm_current {
+  -moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius: 10px;
+}
+.menu li a {
+  display:block; width:118px; height:31px; padding:15px 5px 0 5px;
+  background:url('/theme/images/menu-button2.png') 0 -47px no-repeat;
+  color:#91CFF3; font-size:1.167em; line-height:1em; text-decoration:none; text-align: center;
+}
+.menu li.last a {background:url('/theme/images/menu-button.png') 0 -47px no-repeat;}
+.menu li a:hover {background-position:0px 0px;}
 .menu li span.dm_current {
-  display:block; width:118px; height:33px; padding:15px 5px 0 5px;
-  background:url('/theme/images/bg_nav.jpg') 0 -47px no-repeat;
+  display:block; width:118px; height:31px; padding:15px 5px 0 5px;
+  background:#fff url('/theme/images/menu-button.png') 0 0px no-repeat;
   color:#252960; font-size:1.167em; line-height:1em; text-decoration:none; text-align: center;
 }
 
@@ -150,3 +175,43 @@ fieldset {
 .footer a:hover {text-decoration:underline;}
 
 .footer .dm_layout_ft_content {width:980px; margin:0 auto; padding:73px 0 75px 73px;}
+
+
+/*
+ *  5.0 HEADINGS
+ *  ------------------------------------------
+ */
+
+h2, h3, h4, h5 {font-weight:normal;}
+
+h2 {color:#CC610A;}
+h2 a {color:#CC610A;}
+
+h3, h4 {font-family:"Times New Roman", Times, serif; font-style:italic; line-height:1em;}
+h3 {font-size:2.25em; color:#FFFFFF; padding-left:3px;}
+h4 {font-size:1.583em; color:#80E0FE;}
+
+h5 {color:#80E0FE;}
+
+
+/*
+ *  6.0 LINKS / Buttons
+ *  ------------------------------------------
+ */
+
+a {text-decoration:underline; color:#059CFD;}
+a:hover {text-decoration:none;}
+
+.link {font-family:Tahoma, Geneva, sans-serif; font-weight:bold; font-size:0.917em; text-decoration:none; color:#D6D5D5;} 
+.link:hover {text-decoration:underline;} 
+.link-img {margin-left:4px;}
+
+/*
+ *  10.0 LISTS
+ *  ------------------------------------------
+ */
+ul {list-style:none;} 
+ul li {background:url('/theme/images/list-marker.gif') left 8px no-repeat; padding-left:10px;}
+li a {color:#FF790D;}
+
+
