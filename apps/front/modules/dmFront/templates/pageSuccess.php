@@ -21,9 +21,11 @@
 
     <div class="layout_center clearfix">
 
-      <div class="content_main clearfix">
+      <div class="container container_content_top clearfix">
+        <?php echo $helper->renderArea('page.content_before', '.clearfix') ?>
+      </div><!-- .container container_content_top -->
 
-        <?php echo $helper->renderArea('layout.content_before', '.clearfix') ?>
+      <div class="content_main clearfix">
 
         <?php echo $helper->renderArea('page.content', '.clearfix') ?>
 

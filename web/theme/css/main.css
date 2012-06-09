@@ -25,7 +25,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   background: transparent;
 }
 body {
-  line-height: 1;
+  line-height: 1em;
 }
 ol, ul {
   list-style: none;
@@ -62,13 +62,12 @@ table {
  *  2.0 GENERIC CLASSES
  *  ------------------------------------------
  */
-
+* {margin:0; padding:0; font-size:100%;}
 body {
-  font-family:Arial, Tahoma,Verdana,FreeSans,sans-serif; 
-  color:#333; font-size: 13px; line-height:1.7;
+  font-family:Arial, Helvetica, sans-serif; font-size:0.75em; line-height:1.5em; color:#535353;
   background:#000000 url(/theme/images/bg_header_sketch.jpg) center top no-repeat;
 }
-
+img {vertical-align:top;}
 dl,
 hr,
 ol,
@@ -80,6 +79,8 @@ fieldset {
   margin-bottom: 20px;
 }
 
+html, input, textarea {}
+
 /*
  *  3.0 GENERAL STRUCTURE
  *  ------------------------------------------
@@ -90,17 +91,21 @@ fieldset {
 
 .layout {position:relative; }
 .layout .header {position:relative; min-height:360px; padding-bottom:26px; background:url('/theme/images/bg_gradient_header.jpg') left bottom repeat-x;}
-.dm_layout_top {position: relative; width:960px; min-height:113px; margin:0 auto;}
-.layout_center {/*background-color: #fff;*/ min-height:100px;}
-.container_content_top {margin-bottom: 10px;}
+.dm_layout_top {position: relative; width:940px; min-height:113px; margin:0 auto;}
+.layout_center {width:940px; margin:0 auto;}
+.container_content_top {margin-bottom: 30px;}
 .dm_page_media,
 .dm_page_content_top,
 .content_main,
 .dm_page_content_bottom {width:960px; margin:0 auto;}
-#dm_content {float:left; width:620px; margin:0 10px;}
-.dm_layout_right {float:right; width:300px; margin:0 10px;}
+.dm_page_content_bottom {margin-top:30px;}
+#dm_content {float:left; margin:0 0 0 20px; padding-right:20px; border-right: 1px solid #0C303F;}
+.dm_layout_right {float:left; margin:0 20px;}
 
-.colspan-3 {width:875px;}
+.colspan-3 {width:940px;}
+
+.narrow_right #dm_content {width:550px;}
+.narrow_right .dm_layout_right {width:309px;}
 
 .margin1 {margin-right:3px;}
 .margin2 {margin-left:21px;}
@@ -126,6 +131,9 @@ fieldset {
 .box_rc_bottom .dm_text .text_content {
   background:url('/theme/images/box-tail.png') left bottom repeat-x; 
   min-height:238px; height:auto !important; height:238px;
+}
+.box_rc_bottom .dm_text .text_content .markdown {
+  margin:0 -120px; padding:22px 0 0;
 }
 
 /*
@@ -182,17 +190,31 @@ fieldset {
  *  ------------------------------------------
  */
 
+h1 {
+  margin-bottom:7px;
+  font-family:"Times New Roman", Times, serif; font-style:italic; font-size:3.3em; line-height:1em; color:#91CFF3;
+}
+
 h2, h3, h4, h5 {font-weight:normal;}
 
-h2 {color:#CC610A;}
-h2 a {color:#CC610A;}
+h2 {
+  margin-bottom:10px; padding-bottom:10px; 
+  font-family:"Times New Roman", Times, serif; font-style:italic; line-height:1em;
+  font-size:2.25em; color:#FFFFFF;
+}
 
-h3, h4 {font-family:"Times New Roman", Times, serif; font-style:italic; line-height:1em;}
-h3 {font-size:2.25em; color:#FFFFFF; padding-left:3px;}
-h4 {font-size:1.583em; color:#80E0FE;}
+h3, h4 {padding-bottom:10px; font-family:"Times New Roman", Times, serif; font-style:italic; line-height:1em; }
+h3 {font-size:1.75em; color:#CC610A; }
+h4 {font-size:1.5em; color:#80E0FE;}
 
 h5 {color:#80E0FE;}
 
+
+.title1 {background:url(/theme/images/title-img1.png) left top no-repeat;}
+.title2 {background:url(/theme/images/title-img2.png) left top no-repeat;}
+.title3 {background:url(/theme/images/title-img3.png) left top no-repeat;}
+.title1, .title2, .title3 {padding:20px 0 25px 100px; margin-bottom:7px; font-family:Times New Roman, Times, serif; font-style:italic; font-size:3.3em; line-height:1em;
+ text-transform:none; color:#91CFF3;}
 
 /*
  *  6.0 LINKS / Buttons
@@ -202,9 +224,15 @@ h5 {color:#80E0FE;}
 a {text-decoration:underline; color:#059CFD;}
 a:hover {text-decoration:none;}
 
-.link {font-family:Tahoma, Geneva, sans-serif; font-weight:bold; font-size:0.917em; text-decoration:none; color:#D6D5D5;} 
-.link:hover {text-decoration:underline;} 
+.alt_link {font-family:Tahoma, Geneva, sans-serif; font-weight:bold; font-size:0.917em; text-decoration:none; color:#D6D5D5;} 
+.alt_link:hover {text-decoration:underline;} 
 .link-img {margin-left:4px;}
+
+/*
+ *  7.0 PARAGRAPHS
+ *  ------------------------------------------
+ */
+p {}
 
 /*
  *  10.0 LISTS
@@ -214,4 +242,19 @@ ul {list-style:none;}
 ul li {background:url('/theme/images/list-marker.gif') left 8px no-repeat; padding-left:10px;}
 li a {color:#FF790D;}
 
+.markdown ul {margin:20px 0;}
+/*
+ *  14.0 META
+ *  ------------------------------------------
+ */
+
+
+/*
+*  15.0 COMPONENT SPECIFIC
+*  ------------------------------------------
+*  -in alphabetical order-
+*/
+
+.summary_image_left {margin-bottom:20px;}
+.summary_image_left .dm_first_p {display:inline-block; float:left; margin:0 20px 0 0;}
 
