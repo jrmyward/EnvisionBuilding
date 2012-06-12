@@ -1,5 +1,7 @@
 # Project files
 /cache/*
+/config/databases.yml
+#/config/ProjectConfiguration.class.php
 /log/*
 /data/*
 /web/*dev.php
@@ -7,7 +9,8 @@
 /web/dm
 /web/cache
 /web/sitemap*.xml
-/lib/migration
+#/lib/migration
+#/lib/vendor/*
 
 # SCM files
 .arch-params
@@ -18,3 +21,4 @@ _darcs
 .monotone
 .svn
 CVS
+.DS_Store
